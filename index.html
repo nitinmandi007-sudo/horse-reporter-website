@@ -22,8 +22,16 @@
       text-decoration: none;
       color: #0047e6;
     }
+    .emergency {
+      background-color: #ffdddd;
+      border: 1px solid #ff4444;
+      padding: 15px;
+      margin: 20px 0;
+      font-weight: bold;
+      color: #a60000;
+    }
     footer {
-      margin-top: 30px;
+      margin-top: 40px;
       padding-top: 15px;
       border-top: 1px solid #ccc;
       font-size: 14px;
@@ -36,36 +44,92 @@
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="https://www.termsfeed.com/live/9d28e1c1-982a-4963-a67f-0551d8042239">Privacy Policy</a></li>
     </ul>
   </nav>
 
   <h1>Horse Incident Reporter</h1>
 
-  <p>
-    Horse Incident Reporter is a mobile app that helps users quickly report incidents involving carriage horses.
-  </p>
+  <!-- About the App -->
+  <section>
+    <h2>What the App Is</h2>
+    <ul>
+      <li>A simple mobile-friendly app where users can file a report if they see something wrong with carriage horses.</li>
+      <li>The reports would eventually go to the right groups (ASPCA, city agencies, or others).</li>
+      <li>Right now, it works as a prototype/demo to show how it could help.</li>
+    </ul>
+  </section>
 
-  <p>The app allows you to:</p>
-  <ul>
-    <li>Select incident categories (distress, safety, heat, misconduct, etc.)</li>
-    <li>Enter location &amp; time details</li>
-    <li>Add descriptions, carriage/horse details</li>
-    <li>Attach photos</li>
-    <li>Send a report directly via email</li>
-  </ul>
+  <!-- Core Features -->
+  <section>
+    <h2>Core Features</h2>
+    <ol>
+      <li><strong>Incident Categories</strong> (Dropdown Menu)
+        <ul>
+          <li>Animal distress (overworked, injured, collapsed)</li>
+          <li>Safety violations (traffic issues, illegal parking, blocking crosswalks)</li>
+          <li>Heat/weather concerns</li>
+          <li>General misconduct by carriage drivers</li>
+          <li>Other (with write-in option)</li>
+        </ul>
+      </li>
+      <li><strong>Location & Time</strong>
+        <ul>
+          <li>Manual entry option (address or nearest landmark)</li>
+          <li>Date + time picker (auto-fill current date/time, editable)</li>
+        </ul>
+      </li>
+      <li><strong>Description Box</strong>
+        <ul>
+          <li>Open text field for details</li>
+          <li>Option to include carriage number, horse description, or operator details</li>
+        </ul>
+      </li>
+      <li><strong>Photo Upload</strong>
+        <ul>
+          <li>User can attach 1–2 photos</li>
+        </ul>
+      </li>
+      <li><strong>Contact Info (Optional)</strong>
+        <ul>
+          <li>Name, email, or phone — only if user wants to provide</li>
+        </ul>
+      </li>
+      <li><strong>Emergency Notice</strong> (See below)</li>
+      <li><strong>Submit Button</strong>
+        <ul>
+          <li>Prototype: store the report in a simple database or email it</li>
+          <li>Future: send directly to ASPCA/city via API or email</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
 
-  <p>
-    This is a community-driven tool and is not affiliated with any official city agency.
-  </p>
+  <!-- Emergency Notice -->
+  <div class="emergency">
+    ⚠️ If this is an immediate danger to people or animals, call <strong>911</strong>.  
+    <br>For urgent animal emergencies, call the <strong>ASPCA Hotline</strong> at [insert number].
+  </div>
 
-  <!-- Privacy Section -->
-  <section id="privacy">
-    <h2>Your Privacy Matters</h2>
-    <p>
-      We respect your privacy and handle your data responsibly. 
-      Please review our <a href="https://www.termsfeed.com/live/9d28e1c1-982a-4963-a67f-0551d8042239">Privacy Policy</a> to learn more.
-    </p>
+  <!-- Extra Features -->
+  <section>
+    <h2>Extra Features (Planned)</h2>
+    <ul>
+      <li>Report confirmation screen (“Your report has been submitted. Thank you for helping protect NYC horses.”)</li>
+      <li>Tracking number for the report</li>
+      <li>Multi-language support (Spanish, Mandarin)</li>
+      <li>Admin dashboard (future version)</li>
+    </ul>
+  </section>
+
+  <!-- Design -->
+  <section>
+    <h2>Design & Style</h2>
+    <ul>
+      <li>Clean, simple, not cluttered</li>
+      <li>Mobile responsive (optimized for phones)</li>
+      <li>Step-by-step flow (pick type → enter details → submit)</li>
+    </ul>
   </section>
 
   <hr>
@@ -78,7 +142,7 @@
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Horse Incident Reporter. All rights reserved.</p>
-    <p><a href="privacy.html">Privacy Policy</a></p>
+    <p><a href="https://www.termsfeed.com/live/9d28e1c1-982a-4963-a67f-0551d8042239">Privacy Policy</a></p>
   </footer>
 </body>
 </html>
